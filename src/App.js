@@ -48,7 +48,7 @@ class App extends Component {
                     <div className="row">
                     <Col>
                         <List list={this.state.list} handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>
-                        <ListDisplay listArray={this.state.listArray}/>
+
                     </Col>
                     </div>
                 </Col>
@@ -56,6 +56,9 @@ class App extends Component {
                     <span className="float-right"><button type="submit" style={{width:'18rem'}} className="btn btn-danger btn">Close Board</button></span>
                 </Col>
             </Row>
+            <div style={{display:'flex'}}>
+                <ListDisplay listArray={this.state.listArray}/>
+            </div>
 
         </div>);
   }
